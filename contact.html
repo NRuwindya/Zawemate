@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="styleguide.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Zawemate</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="upper_bg">
+        <div class="upper_bg_content">
+            <header>
+                <a href="index.html" class="logo">
+                    <img src="images/logo.svg" alt="Zawemate">
+                </a>
+                <button class="menu-toggle" aria-label="Toggle Menu">☰</button>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="info.html">Financial Lessons</a></li>
+                    <li><a href="table.html">Comparison Table</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html" class="active_page">Contact</a></li>
+                </ul>
+            </header>
+
+            <h1>We’re Here to Help You Master Your Finances</h1>
+
+            <ul class="section_nav">
+                <li><a href="index.html">
+                        <p style="line-height:24px;">Home</p>
+                    </a></li>
+                <p style="line-height:24px; margin:0 20px;">></p>
+                <li><a href="about.html" class="card_title">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="contact_container">
+        <section class="contact_intro">
+            <p class="mini_title_bg">Contact Us</p>
+            <h3 class="subtitle">Reach Out to Zawemate</h3>
+            <p>Have questions, feedback, or suggestions? We’d love to hear from you! Use the form below to reach out,
+                and we’ll make sure your message is received and answered as quickly as possible. Your input helps us
+                make Zawemate even better.</p>
+            <img src="images/contact.svg" alt="Customer support">
+        </section>
+
+        <form class="contactpage_form">
+            <h3 class="subtitle">Contact Us</h3>
+
+            <label class="card_title" for="full_name">Full Name</label>
+            <input type="text" id="full_name" name="full_name" placeholder="Enter your name" required>
+
+            <label class="card_title" for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label class="card_title">How did you hear about us?</label>
+            <div class="radio_group">
+                <label><input type="radio" name="source" value="social_media"> Social Media</label>
+                <label><input type="radio" name="source" value="friend"> Friend</label>
+                <label><input type="radio" name="source" value="search_engine"> Search Engine</label>
+                <label><input type="radio" name="source" value="other"> Other</label>
+            </div>
+
+            <label class="card_title">Topics of Interest (choose any)</label>
+            <div class="checkbox_group">
+                <label><input type="checkbox" name="topics" value="budgeting"> Budgeting</label>
+                <label><input type="checkbox" name="topics" value="saving"> Saving</label>
+                <label><input type="checkbox" name="topics" value="investing"> Investing</label>
+                <label><input type="checkbox" name="topics" value="debt"> Debt Management</label>
+            </div>
+
+            <label class="card_title" for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Type your message here..." rows="5" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <footer>
+        <div class="footer_content">
+            <p class="footer_description">
+                We aim to equip low-income families and individuals with the knowledge and tools to manage money wisely.
+                Through
+                easy-to-follow lessons, practical tips, and interactive resources
+            </p>
+
+            <div class="footer_links">
+                <p class="card_title">Quick Links</p>
+                <ul class="nav-links_footer">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="info.html">Financial Lessons</a></li>
+                    <li><a href="table.html">Comparison Table</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <img class="footer_image" src="images/footer_img.svg" alt="Zawemate">
+        </div>
+
+        <a href="index.html"> <img class="logo" src="images/logo.svg" alt="Zawemate"></a>
+
+        <div class="copyright">
+            <p>© 2025 ZaweMate. All rights reserved.</p>
+            <p>Designed & developed with ❤️ by <a href="https://www.youtube.com/@ruwindyaa" target="_blank"> Ruwindya</a></p>
+        </div>
+    </footer>
+
+</body>
+
+
+<script>
+    const menuBtn = document.querySelector(".menu-toggle");
+    const nav = document.querySelector(".nav-links");
+
+    menuBtn.addEventListener("click", () => {
+        nav.classList.toggle("show");
+
+        // Toggle the icon text between ☰ and ✖
+        if (menuBtn.textContent === "☰") {
+            menuBtn.textContent = "✖";
+        } else {
+            menuBtn.textContent = "☰";
+        }
+    });
+</script>
+
+</html>

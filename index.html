@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="globals.css" />
+  <link rel="stylesheet" href="styleguide.css" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Zawemate</title>
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <a href="index.html" class="logo">
+      <img src="images/logo.svg" alt="Zawemate">
+    </a>
+
+    <!-- Hamburger button (mobile only) -->
+    <button class="menu-toggle" aria-label="Toggle Menu">☰</button>
+
+    <ul class="nav-links">
+      <li><a href="index.html" class="active_page">Home</a></li>
+      <li><a href="info.html">Financial Lessons</a></li>
+      <li><a href="table.html">Comparison Table</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </header>
+
+
+  <section class="hero">
+    <div class="hero_text">
+      <p class="mini_title">Budget Better</p>
+      <h1 class="hero_heading">Master Your Money
+        with Confidence</h1>
+      <p>Empowering you with practical budgeting tips, clear financial education, and smart money management advice for
+        everyday life.</p>
+      <button onclick="window.location.href='info.html'">Start Learning Today</button>
+    </div>
+    <img class="hero_image" src="images/hero-img.svg" alt="Money management">
+  </section>
+
+  <section class="highlights">
+    <p class="mini_title_bg">What You’ll Learn</p>
+    <h3 class="subtitle">Practical Money Skills to Take Control of Your Finances</h3>
+    <div class="card_holder">
+      <div class="card">
+        <img src="images/card_icon (4).svg" alt="Money Icon">
+        <div class="card_bg">
+          <p class="card_title">Simple Budgeting</p>
+          <p>Learn how to plan your income and expenses clearly, avoid overspending, and stay in control of your
+            finances.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/card_icon (1).svg" alt="Money Icon">
+        <div class="card_bg">
+          <p class="card_title">Smart Saving</p>
+          <p>Discover easy ways to save regularly, build an emergency fund, and prepare for important future needs.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/card_icon (2).svg" alt="Money Icon">
+        <div class="card_bg">
+          <p class="card_title">Debt Control</p>
+          <p>Understand how to manage loans and credit cards, reduce debt step by step, and avoid high-interest traps.
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/card_icon (3).svg" alt="Money Icon">
+        <div class="card_bg">
+          <p class="card_title">Basic Investing</p>
+          <p>Explore beginner-friendly options to invest safely, grow your savings, and confidently secure your
+            financial future.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="mission">
+    <div class="mission_text">
+      <h6 class="mini_title_bg">Our Mission</h6>
+      <h3 class="subtitle">Empowering Everyone with Practical Financial Skills</h3>
+      <p>We aim to equip low-income families and individuals with the knowledge and tools to manage money wisely.
+        Through easy-to-follow lessons, practical tips, and interactive resources, we help users build confidence in
+        budgeting, saving, and making informed financial decision.
+      </p>
+      <button onclick="window.location.href='info.html'">Start Learning Today</button>
+    </div>
+    <img src="images/mission image.svg" alt="Managing finances">
+  </section>
+
+  <section class="budgeting_methods">
+    <h6 class="mini_title_bg">Budgeting Methods</h6>
+    <h3 class="subtitle">Find the Best Budgeting Method for Your Lifestyle and Take Control of Your Finances</h3>
+    <p>Explore our easy-to-read comparison table of popular budgeting methods and practical strategies. See the pros,
+      cons, and who each method works best for, so you can choose the strategy that perfectly fits your financial goals.
+    </p>
+    <button onclick="window.location.href='table.html'">View Comparison Table</button>
+  </section>
+  
+
+  <section class="contact">
+    <h6 class="mini_title_bg">Get in Touch</h6>
+    <h3 class="subtitle">We’re Here to Help You Take Control of Your Finances</h3>
+
+    <div class="contact_form">
+      <form action="#" method="post">
+
+        <div class="form-row">
+          <div>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+          </div>
+
+          <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+          </div>
+
+          <div>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="1" placeholder="Type your message..." required></textarea>
+          </div>
+        </div>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </section>
+  
+  <footer>
+    <div class="footer_content">
+      <p class="footer_description">
+        We aim to equip low-income families and individuals with the knowledge and tools to manage money wisely. Through
+        easy-to-follow lessons, practical tips, and interactive resources
+      </p>
+
+      <div class="footer_links">
+        <p class="card_title">Quick Links</p>
+        <ul class="nav-links_footer">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="info.html">Financial Lessons</a></li>
+          <li><a href="table.html">Comparison Table</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <img class="footer_image" src="images/footer_img.svg" alt="Zawemate">
+    </div>
+
+    <a href="index.html"> <img class="logo" src="images/logo.svg" alt="Zawemate"></a>
+
+    <div class="copyright">
+      <p>© 2025 ZaweMate. All rights reserved.</p>
+      <p>Designed & developed with ❤️ by <a href="https://www.youtube.com/@ruwindyaa" target="_blank"> Ruwindya</a></p>
+    </div>
+  </footer>
+</body>
+<script>
+  const menuBtn = document.querySelector(".menu-toggle");
+  const nav = document.querySelector(".nav-links");
+
+  menuBtn.addEventListener("click", () => {
+    nav.classList.toggle("show");
+
+    // Toggle the icon text between ☰ and ✖
+    if (menuBtn.textContent === "☰") {
+      menuBtn.textContent = "✖";
+    } else {
+      menuBtn.textContent = "☰";
+    }
+  });
+</script>
+
+</html>

@@ -1,0 +1,5 @@
+Figma design link: 
+https://www.figma.com/design/uapxxNzzZoYoV2Nn1NdZUW/Finance-web?node-id=0-1&t=477rPQ7H9U8gTTNj-1
+
+Prototype link:
+https://www.figma.com/proto/uapxxNzzZoYoV2Nn1NdZUW/Finance-web?node-id=46-235&t=477rPQ7H9U8gTTNj-0&scaling=scale-down&content-scaling=fixed&starting-point-node-id=46%3A235
